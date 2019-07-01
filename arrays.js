@@ -4,13 +4,17 @@ function addElementToBeginningOfArray(chocolateBars, candy){
   return [candy, ...chocolateBars];
 }
 function destructivelyAddElementToBeginningOfArray(chocolateBars, candy){
-  return chocolateBars.unshift(candy)
+  return chocolateBars.unshift(candy);
+  return chocolateBars;
 }
 function addElementToEndOfArray(chocolateBars, candy){
   return [...chocolateBars, candy]
 }
 function destructivelyAddElementToEndOfArray(chocolateBars, candy){
-  return chocolateBars.push(candy)
+  return chocolateBars.push(candy);
+  return chocolateBars;
 }
 
-var accessElementInArray = [array, index]
+function accessElementInArray(array, index){
+  return array[index];
+}
